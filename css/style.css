@@ -1,0 +1,95 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/* Ana Container  */
+.container {
+  width: 1200px;
+  height: 500px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.roof {
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 200px solid brown;
+  position: relative;
+}
+.kamin_bottom {
+  width: 40px;
+  height: 60px;
+  background-color: gray;
+  position: absolute;
+  left: 75px;
+  top: 20px;
+}
+.kamin_top {
+  width: 60px;
+  height: 10px;
+  background-color: rgb(179, 175, 175);
+  position: absolute;
+  top: 20px;
+  left: 65px;
+}
+.front_wall {
+  width: 600px;
+  height: 300px;
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 0px 40px;
+}
+.window-container {
+  display: flex;
+  justify-content: space-between;
+}
+.left-window {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  background-image: linear-gradient(
+      to right,
+      transparent 10%,
+      transparent 90%,
+      rgb(10, 9, 9) 90%
+    ),
+    linear-gradient(to bottom, transparent 10%, transparent 90%, #0e0e0e 10%);
+  background-size: 30px 30px;
+  border: 3px solid black;
+}
+/* pencereleri linear gradient ile yaptim */
+.right-window {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  background-image: linear-gradient(
+      to right,
+      transparent 10%,
+      transparent 90%,
+      rgb(10, 9, 9) 90%
+    ),
+    linear-gradient(to bottom, transparent 10%, transparent 90%, #0e0e0e 10%);
+  background-size: 30px 30px;
+  border: 3px solid black;
+}
+.door {
+  width: 100px;
+  height: 180px;
+  border: 5px solid brown;
+  border-bottom: 7px solid black;
+  display: flex;
+  align-self: center;
+}
+.kol {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+}
